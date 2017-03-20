@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layoutMaster.master.cs" Inherits="SchoolMaster.layoutMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url("/Background/quadroNegro.png");
+            background-size: 100%;
+        }
+
+        .auto-style1 {
+            font-size: 40pt;
+            color: white;
+        }
+
+        .auto-style2 {
+            font-size: 25pt;
+            color: white;
+        }
+
+        .auto-style3 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+        <br />
+        <br />
+        <h1 class="auto-style1">School Master by Walter</h1>
+        <table class="auto-style3">
+            <form id="form1" runat="server" class="form-horizontal">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
